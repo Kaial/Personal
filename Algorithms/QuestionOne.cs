@@ -14,7 +14,7 @@ namespace Algorithms
          Console.ReadKey();
       }
       /// <summary>
-      /// This was my initial solution, while simple, it's running time is O(n^2) 
+      /// This was my initial solution, while simple, it's running time is less than desireable ( O(n^2) )
       /// </summary>
       /// <param name="stockPrices"></param>
       /// <returns></returns>
@@ -38,8 +38,8 @@ namespace Algorithms
          return maxProfit;
       }
       /// <summary>
-      /// this solution is better, it's limitation is when the stock price is falling, it will return a negative number, 
-      /// but that should be obvious to any user that there is no profitable solution
+      /// This solution is more efficent running in O(n), but it will return negative numbers if the stock is continually falling. 
+      /// However if you are getting a negative profit it's pretty clear that you should not be buying any of the stock. 
       /// </summary>
       /// <param name="stockPrices"></param>
       /// <returns></returns>
